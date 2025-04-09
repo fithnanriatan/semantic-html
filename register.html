@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrasi</title>
+</head>
+<body>
+    <main>
+        <h1>Formulir Registrasi</h1>
+        <form action="" method="">
+            <label for="nama">Nama Lengkap:</label>
+            <input type="text" id="nama" name="nama">
+            <label for="tempat_lahir">Tempat Lahir:</label>
+            <input type="text" id="tempat_lahir" name="tempat_lahir" placeholder="Tempat Lahir">
+            <label for="tanggal_lahir">Tanggal Lahir:</label>
+            <input type="date" id="tanggal_lahir" name="tanggal_lahir">
+
+            <fieldset>
+                <legend>Jenis Kelamin:</legend>
+                <input type="radio" id="pria" name="jenis_kelamin" value="Pria">
+                <label for="pria">Pria</label>
+                <input type="radio" id="wanita" name="jenis_kelamin" value="Wanita">
+                <label for="wanita">Wanita</label>
+            </fieldset>
+
+            <label for="asal_sekolah">Asal Sekolah:</label>
+            <input type="text" id="asal_sekolah" name="asal_sekolah">
+            <label for="tahun_lulus">Tahun Lulus:</label>
+            <input type="number" id="tahun_lulus" name="tahun_lulus">
+            <label for="kota">Kota/Kabupaten:</label>
+            <select id="kota" name="kota">
+                <option value="Kota Pekalongan">Kota
+                    Pekalongan</option>
+                <option value="Kab. Pekalongan">Kab.
+                    Pekalongan</option>
+                <option value="Kab. Pemalang">Kab.
+                    Pemalang</option>
+                <option value="Kab. Batang">Kab.
+                    Batang</option>
+            </select>
+            <label for="alamat">Alamat Tinggal:</label>
+            <textarea id="alamat" name="alamat" rows="4"></textarea>
+            <label for="nomor_hp">Nomor HP:</label>
+            <input type="tel" id="nomor_hp" name="nomor_hp">
+            <p>Pemrograman Berbasis Web I Pertemuan-2</p>
+            <button type="submit">Daftar</button>
+            <button class="cancle" type="button" onclick="window.location.href='index.html'">Batal</button>
+
+        </form>
+
+    </main>
+</body>
+</html>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f8ff;
+        margin: 0;
+        padding: 0;
+    }
+
+    main {
+        max-width: 600px;
+        margin: 50px auto;
+        background-color: #ffffff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+        text-align: center;
+        color: #004080;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    label, legend {
+        font-weight: bold;
+        color: #004080;
+        margin-bottom: 5px;
+    }
+
+    input, select, textarea, button, fieldset {
+        font-size: 16px;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #b0c4de;
+        border-radius: 4px;
+    }
+
+    input:focus, select:focus, textarea:focus {
+        outline: none;
+        border-color: #4682b4;
+        box-shadow: 0 0 5px rgba(70, 130, 180, 0.5);
+    }
+
+    button {
+        height: 48px;
+        background-color: #004080;
+        font-weight: bold;
+        color: #ffffff;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+        background-color: #0059b3;
+    }
+
+    .cancle {
+        background-color: #ff6347;
+        color: #ffffff;
+    }
+    .cancle:hover {
+        background-color: #ff4500;
+    }
+</style>
